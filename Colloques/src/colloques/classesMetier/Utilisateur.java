@@ -33,6 +33,9 @@ public class Utilisateur implements Serializable{
         this.rang = rang;
     }
     
+    /**
+     * Constructeur Utilisateur
+     */
     public Utilisateur() { }
 
     public int getId() {

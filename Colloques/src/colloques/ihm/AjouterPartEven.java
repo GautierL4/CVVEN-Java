@@ -143,7 +143,13 @@ public class AjouterPartEven extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Une erreur est survenue lors de l'ajout du participant");
         }
     }//GEN-LAST:event_btnValiderActionPerformed
-
+    
+    /**
+     * Méthode permettant de retourner l'id du Participant.
+     * @param nom
+     * @param prenom
+     * @return int
+     */
     public int getIdParticipant(String nom, String prenom) {
         ParticipantDAO pDao = new ParticipantDAO();
         int id = -1;

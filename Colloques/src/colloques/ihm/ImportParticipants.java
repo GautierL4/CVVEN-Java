@@ -169,11 +169,22 @@ public class ImportParticipants extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(jFileChooser, "Pensez à remplir le fichier au format suivant : \n nom;prenom;email;organisation;observation;Date Naissance\n ex. : Dupond;Bernard;d.bernard@gmail.com;Facebook;bien;12/11/1950\n");
 
     }//GEN-LAST:event_btnInfoActionPerformed
-
+    
+    /**
+     * Méthode permettant de vérifier l'extension du fichier CSV.
+     * @param file
+     * @return boolean
+     */
     public boolean verifierExtension(String file) {
         return file.endsWith(".csv".toLowerCase());
     }
-
+    
+    /**
+     * Retourne true si le tableau contient bien le bon nombre de colonnes.
+     * @param tab
+     * @return
+     * @throws Exception 
+     */
     public boolean estValideTableau(String tab[]) throws Exception {
         return (tab != null && tab.length == 6) ? true : false;
     }
@@ -247,7 +258,7 @@ public class ImportParticipants extends javax.swing.JPanel {
     }
 
     /**
-     * Vérifie la présence
+     * Vérifie la présence de l'adresse Email.
      * @param email
      * @return
      */
@@ -307,10 +318,9 @@ public class ImportParticipants extends javax.swing.JPanel {
         }
     }
 
-    private Image image;
+
     private Thread t;
     private static int total;
-    private StringBuilder sb = new StringBuilder();
     private static String fileName = "";
     private static File file = null;
     // Variables declaration - do not modify//GEN-BEGIN:variables

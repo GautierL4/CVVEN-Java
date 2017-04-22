@@ -60,6 +60,20 @@ public class Evenement implements Serializable{
         this.num_salle = num_salle;
     }
     
+    /**
+     * Constructeur Evenement
+     * @param libelle
+     * @param theme
+     * @param date_debut
+     * @param date_fin
+     * @param duree
+     * @param nb_participant_max
+     * @param description
+     * @param organisateur
+     * @param type_event
+     * @param etat
+     * @param num_salle 
+     */
     public Evenement(String libelle, String theme, GregorianCalendar date_debut, GregorianCalendar date_fin, int duree, int nb_participant_max, String description, String organisateur, String type_event, String etat, int num_salle) {
         this.libelle = libelle;
         this.theme = theme;
@@ -74,6 +88,9 @@ public class Evenement implements Serializable{
         this.num_salle = num_salle;
     }
     
+    /**
+     * Constructeur Evenement
+     */
     public Evenement(){ }
     
     public int getNum_event() {

@@ -95,7 +95,9 @@ public class AccueilPanel extends javax.swing.JPanel {
                 .addGap(32, 32, 32))
         );
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+     * Méthode permettant de charger l'ensemble des données dans le JTable.
+     */
     public void chargerDonnees() {
         EvenementDAO eventDAO = new EvenementDAO();
 

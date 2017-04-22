@@ -80,7 +80,9 @@ public class ConsulterParticipantPanel extends javax.swing.JPanel {
                 .addGap(80, 80, 80))
         );
     }// </editor-fold>//GEN-END:initComponents
-        
+    /**
+     * Méthode permettant de charger les données dans la JTable.
+     */
     public void chargerDonnees() {
         ParticipantDAO particiDAO = new ParticipantDAO();
 

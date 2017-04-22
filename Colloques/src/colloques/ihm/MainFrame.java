@@ -24,7 +24,7 @@ public class MainFrame extends javax.swing.JFrame {
         this.add(accPanel);
 
         this.setLocationRelativeTo(null);
-       
+
     }
 
     /**
@@ -189,7 +189,7 @@ public class MainFrame extends javax.swing.JFrame {
         jMenuBar1.add(Box.createHorizontalGlue());
         deconnexion.setText("Déconnexion");
         deconnexion.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 Deconnexion(evt);
             }
         });
@@ -213,7 +213,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
     }//GEN-LAST:event_Deconnexion
-    
+
     private void ajoutPartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ajoutPartActionPerformed
         SaisieParticipantPanel saisiePartici = new SaisieParticipantPanel();
         this.setContentPane(saisiePartici);
@@ -227,7 +227,7 @@ public class MainFrame extends javax.swing.JFrame {
         this.setContentPane(saisieEvent);
         this.repaint();
         this.revalidate();
-        this.setSize((int) saisieEvent.getPreferredSize().getWidth(), (int) saisieEvent.getPreferredSize().getHeight()+70);
+        this.setSize((int) saisieEvent.getPreferredSize().getWidth(), (int) saisieEvent.getPreferredSize().getHeight() + 70);
     }//GEN-LAST:event_ajoutEvenActionPerformed
 
     private void importCSVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_importCSVActionPerformed
@@ -295,8 +295,8 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_modifPartActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-          AccueilPanel accPanel = new AccueilPanel();
-         this.setContentPane(accPanel);
+        AccueilPanel accPanel = new AccueilPanel();
+        this.setContentPane(accPanel);
         this.repaint();
         this.revalidate();
         this.setSize((int) accPanel.getPreferredSize().getWidth(), (int) accPanel.getPreferredSize().getHeight());
